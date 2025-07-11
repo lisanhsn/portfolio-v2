@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisan Hsn - AI-Leveraged Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Self-taught developer specializing in AI-assisted development, building intelligent web applications and scalable solutions."
+    />
+    <meta
+      name="keywords"
+      content="AI developer, full stack developer, self-taught programmer, React, Node.js, artificial intelligence"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lisanhsn.dev/" />
+    <meta
+      property="og:title"
+      content="Lisan Hsn - AI-Leveraged Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Self-taught developer specializing in AI-assisted development"
+    />
+    <meta property="og:image" content="./images/profile-hero.jpeg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lisanhsn.dev/" />
+    <meta
+      property="twitter:title"
+      content="Lisan Hsn - AI-Leveraged Full Stack Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Self-taught developer specializing in AI-assisted development"
+    />
+    <meta property="twitter:image" content="./images/profile-hero.jpeg" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+              display: ["Outfit", "system-ui", "-apple-system", "sans-serif"],
+            },
+            colors: {
+              warm: {
+                50: "#fdf8f6",
+                100: "#f2e8e5",
+                200: "#eaddd7",
+                300: "#e0cec7",
+                400: "#d2bab0",
+                500: "#bfa094",
+                600: "#a18072",
+                700: "#977669",
+                800: "#846358",
+                900: "#43302b",
+              },
+              desert: {
+                50: "#faf8f3",
+                100: "#f4f0e6",
+                200: "#e8dfc9",
+                300: "#d9ca9f",
+                400: "#c8b174",
+                500: "#bc9e5a",
+                600: "#a5844a",
+                700: "#8a6b3d",
+                800: "#705537",
+                900: "#5c4530",
+              },
+              glass: {
+                light: "rgba(255, 255, 255, 0.1)",
+                medium: "rgba(255, 255, 255, 0.05)",
+                dark: "rgba(0, 0, 0, 0.1)",
+              },
+            },
+            backdropBlur: {
+              xs: "2px",
+              glass: "16px",
+              intense: "24px",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "float-delayed": "float 6s ease-in-out infinite 2s",
+              "float-slow": "float 8s ease-in-out infinite 4s",
+              glow: "glow 2s ease-in-out infinite alternate",
+              "slide-up": "slideUp 0.8s ease-out",
+              "fade-in": "fadeIn 1s ease-out",
+              "scale-in": "scaleIn 0.6s ease-out",
+              "rotate-slow": "rotate 20s linear infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
+                "50%": { transform: "translateY(-20px) rotate(5deg)" },
+              },
+              glow: {
+                "0%": { opacity: "0.5", transform: "scale(1)" },
+                "100%": { opacity: "0.8", transform: "scale(1.05)" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(50px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              scaleIn: {
+                "0%": { transform: "scale(0.9)", opacity: "0" },
+                "100%": { transform: "scale(1)", opacity: "1" },
+              },
+              rotate: {
+                "0%": { transform: "rotate(0deg)" },
+                "100%": { transform: "rotate(360deg)" },
+              },
+            },
+            boxShadow: {
+              glass: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+              "glass-lg": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+              warm: "0 10px 40px rgba(191, 160, 148, 0.3)",
+              glow: "0 0 20px rgba(191, 160, 148, 0.5)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-warm-100 via-desert-50 to-warm-200 relative overflow-x-hidden"
+  >
+    <!-- Organic Background Elements -->
+    <div class="fixed inset-0 z-0">
+      <div
+        class="absolute inset-0 bg-[url('./images/tech-background.jpg')] bg-cover bg-center opacity-20"
+      ></div>
+      <div class="absolute top-0 left-0 w-full h-full">
+        <!-- Floating organic shapes -->
+        <div
+          class="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-warm-300/30 to-desert-300/30 rounded-full blur-3xl animate-float"
+        ></div>
+        <div
+          class="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-desert-400/20 to-warm-400/20 rounded-full blur-3xl animate-float-delayed"
+        ></div>
+        <div
+          class="absolute bottom-40 left-1/4 w-80 h-80 bg-gradient-to-r from-warm-200/40 to-desert-200/40 rounded-full blur-3xl animate-float-slow"
+        ></div>
+        <div
+          class="absolute bottom-20 right-1/3 w-72 h-72 bg-gradient-to-r from-desert-300/25 to-warm-300/25 rounded-full blur-3xl animate-float"
+        ></div>
+      </div>
+      <!-- Subtle grid overlay -->
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(191,160,148,0.1)_1px,transparent_0)] bg-[length:40px_40px]"
+      ></div>
+    </div>
+
+    <!-- Navigation Glass Card -->
+    <nav
+      class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 animate-fade-in"
+    >
+      <div class="glass-card px-8 py-4 rounded-full">
+        <div class="flex items-center justify-between min-w-[600px]">
+          <a
+            href="#home"
+            class="text-xl font-bold text-warm-800 hover:text-warm-600 transition-colors font-display"
+          >
+            Lisan Hsn
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link-glass">Home</a>
+            <a href="#about" class="nav-link-glass">About</a>
+            <a href="#skills" class="nav-link-glass">Skills</a>
+            <a href="#projects" class="nav-link-glass">Projects</a>
+            <a href="#experience" class="nav-link-glass">Experience</a>
+            <a href="#contact" class="nav-link-glass">Contact</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="mobile-menu-button text-warm-700 hover:text-warm-500"
+            >
+              <i class="fas fa-bars text-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Glass Card -->
+      <div class="mobile-menu hidden md:hidden mt-4">
+        <div class="glass-card rounded-2xl p-6">
+          <div class="space-y-4">
+            <a href="#home" class="block nav-link-glass">Home</a>
+            <a href="#about" class="block nav-link-glass">About</a>
+            <a href="#skills" class="block nav-link-glass">Skills</a>
+            <a href="#projects" class="block nav-link-glass">Projects</a>
+            <a href="#experience" class="block nav-link-glass">Experience</a>
+            <a href="#contact" class="block nav-link-glass">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative z-10 pt-24"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left Column - Main Content -->
+        <div class="space-y-8 animate-slide-up">
+          <div class="glass-card-hero p-12 rounded-3xl">
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <img
+                  src="./images/profile-hero.jpeg"
+                  alt="Lisan Hsn"
+                  class="w-16 h-16 rounded-full border-2 border-warm-400/50 shadow-warm"
+                />
+                <div>
+                  <h1
+                    class="text-5xl lg:text-6xl font-bold text-warm-900 font-display mb-2"
+                  >
+                    Lisan Hsn
+                  </h1>
+                  <div class="text-xl text-warm-700 font-medium">
+                    AI-Leveraged Full Stack Developer
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-lg text-warm-800 leading-relaxed">
+                Crafting intelligent solutions through code and AI
+                collaboration.
+                <span class="font-semibold text-warm-900"
+                  >Self-taught developer</span
+                >
+                with a passion for innovation.
+              </p>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#projects" class="btn-glass-primary group">
+                  View My Work
+                  <i
+                    class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"
+                  ></i>
+                </a>
+                <a href="#contact" class="btn-glass-secondary">
+                  Get In Touch
+                  <i class="fas fa-envelope ml-2"></i>
+                </a>
+              </div>
+
+              <!-- Social Links -->
+              <div class="flex space-x-4 pt-4">
+                <a
+                  href="https://github.com/lisanhsn"
+                  class="social-glass"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/lisanhsn"
+                  class="social-glass"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://twitter.com/lisanhsn"
+                  class="social-glass"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Floating Elements -->
+        <div class="relative animate-scale-in">
+          <!-- Main floating card -->
+          <div
+            class="glass-card-floating p-8 rounded-3xl transform rotate-3 hover:rotate-0 transition-all duration-500"
+          >
+            <div class="space-y-6">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-warm-900 font-display">
+                  4+
+                </div>
+                <div class="text-warm-700">Years Experience</div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-desert-800">15+</div>
+                  <div class="text-sm text-warm-700">Projects</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-desert-800">40%</div>
+                  <div class="text-sm text-warm-700">Faster Dev</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smaller floating cards -->
+          <div
+            class="absolute -top-8 -right-8 glass-card-small p-4 rounded-2xl animate-float"
+          >
+            <div class="text-center">
+              <i class="fas fa-robot text-2xl text-warm-700 mb-2"></i>
+              <div class="text-sm font-medium text-warm-800">AI Tools</div>
+            </div>
+          </div>
+
+          <div
+            class="absolute -bottom-6 -left-6 glass-card-small p-4 rounded-2xl animate-float-delayed"
+          >
+            <div class="text-center">
+              <i class="fas fa-code text-2xl text-desert-700 mb-2"></i>
+              <div class="text-sm font-medium text-warm-800">Full Stack</div>
+            </div>
+          </div>
+
+          <!-- Floating orbs -->
+          <div
+            class="absolute top-12 left-12 w-16 h-16 bg-gradient-to-r from-warm-300/40 to-desert-300/40 rounded-full blur-sm animate-glow"
+          ></div>
+          <div
+            class="absolute bottom-16 right-16 w-12 h-12 bg-gradient-to-r from-desert-400/50 to-warm-400/50 rounded-full blur-sm animate-float"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">About Me</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Self-taught developer with a passion for AI-enhanced development
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Main about card -->
+          <div class="lg:col-span-2">
+            <div class="glass-card p-10 rounded-3xl space-y-6">
+              <div class="prose prose-lg text-warm-800">
+                <p id="about-intro" class="text-lg leading-relaxed"></p>
+                <p id="about-story" class="leading-relaxed"></p>
+                <p id="about-philosophy" class="leading-relaxed"></p>
+              </div>
+
+              <div class="glass-card-inner p-6 rounded-2xl">
+                <h3
+                  class="text-xl font-semibold text-warm-900 mb-4 font-display"
+                >
+                  Key Achievements
+                </h3>
+                <ul id="achievements-list" class="space-y-3"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats cards -->
+          <div class="space-y-6">
+            <div
+              class="glass-card p-6 rounded-3xl text-center transform hover:scale-105 transition-all duration-300"
+            >
+              <img
+                src="./images/ai-coding-background.jpg"
+                alt="AI Coding"
+                class="w-full h-32 object-cover rounded-xl mb-4"
+              />
+              <div class="text-2xl font-bold text-warm-900 font-display">
+                AI-Enhanced
+              </div>
+              <div class="text-warm-700">Development Process</div>
+            </div>
+
+            <div class="glass-card p-6 rounded-3xl">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-desert-800 font-display">
+                    4+
+                  </div>
+                  <div class="text-sm text-warm-700">Years Experience</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-desert-800 font-display">
+                    15+
+                  </div>
+                  <div class="text-sm text-warm-700">Projects Deployed</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-desert-800 font-display">
+                    40%
+                  </div>
+                  <div class="text-sm text-warm-700">Faster Development</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-desert-800 font-display">
+                    10+
+                  </div>
+                  <div class="text-sm text-warm-700">Developers Mentored</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">Skills & Technologies</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Modern tech stack enhanced by AI-powered development tools
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <!-- Frontend Skills -->
+          <div class="glass-card p-8 rounded-3xl skill-card-glass">
+            <div class="skill-header-glass">
+              <i class="fas fa-code text-warm-600 text-2xl"></i>
+              <h3 class="text-xl font-semibold text-warm-900 font-display">
+                Frontend
+              </h3>
+            </div>
+            <div id="frontend-skills" class="skill-list-glass"></div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="glass-card p-8 rounded-3xl skill-card-glass">
+            <div class="skill-header-glass">
+              <i class="fas fa-server text-desert-600 text-2xl"></i>
+              <h3 class="text-xl font-semibold text-warm-900 font-display">
+                Backend
+              </h3>
+            </div>
+            <div id="backend-skills" class="skill-list-glass"></div>
+          </div>
+
+          <!-- AI Tools -->
+          <div class="glass-card p-8 rounded-3xl skill-card-glass">
+            <div class="skill-header-glass">
+              <i class="fas fa-robot text-green-600 text-2xl"></i>
+              <h3 class="text-xl font-semibold text-warm-900 font-display">
+                AI Tools
+              </h3>
+            </div>
+            <div id="ai-skills" class="skill-list-glass"></div>
+          </div>
+
+          <!-- Cloud & Tools -->
+          <div class="glass-card p-8 rounded-3xl skill-card-glass">
+            <div class="skill-header-glass">
+              <i class="fas fa-cloud text-purple-600 text-2xl"></i>
+              <h3 class="text-xl font-semibold text-warm-900 font-display">
+                Cloud & Tools
+              </h3>
+            </div>
+            <div id="cloud-skills" class="skill-list-glass"></div>
+          </div>
+        </div>
+
+        <!-- AI Integration Philosophy -->
+        <div class="glass-card-highlight p-10 rounded-3xl">
+          <h3
+            class="text-3xl font-bold text-center mb-8 text-warm-900 font-display"
+          >
+            AI-Enhanced Development Approach
+          </h3>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div
+                class="glass-icon-card w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-lightbulb text-warm-600 text-3xl"></i>
+              </div>
+              <h4 class="font-semibold mb-3 text-warm-900 font-display">
+                Creative Problem Solving
+              </h4>
+              <p class="text-warm-700 text-sm leading-relaxed">
+                Leveraging AI for brainstorming, architecture planning, and
+                innovative solution discovery
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="glass-icon-card w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-rocket text-desert-600 text-3xl"></i>
+              </div>
+              <h4 class="font-semibold mb-3 text-warm-900 font-display">
+                Accelerated Development
+              </h4>
+              <p class="text-warm-700 text-sm leading-relaxed">
+                Using AI assistants for faster coding, debugging, and code
+                optimization
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="glass-icon-card w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-check-circle text-green-600 text-3xl"></i>
+              </div>
+              <h4 class="font-semibold mb-3 text-warm-900 font-display">
+                Quality Assurance
+              </h4>
+              <p class="text-warm-700 text-sm leading-relaxed">
+                AI-powered code review, testing strategies, and best practices
+                implementation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">Featured Projects</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Showcasing intelligent solutions built with modern technologies and
+            AI assistance
+          </p>
+        </div>
+
+        <div id="projects-grid" class="grid lg:grid-cols-2 gap-8 mb-12">
+          <!-- Projects will be loaded dynamically -->
+        </div>
+
+        <div class="text-center">
+          <a
+            href="https://github.com/lisanhsn"
+            class="btn-glass-secondary"
+            target="_blank"
+            rel="noopener"
+          >
+            View All Projects
+            <i class="fab fa-github ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">Professional Journey</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Building expertise through hands-on experience and continuous
+            learning
+          </p>
+        </div>
+
+        <div class="relative">
+          <!-- Glass timeline line -->
+          <div
+            class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-warm-300 via-desert-300 to-warm-300 rounded-full"
+          ></div>
+
+          <div id="experience-timeline" class="space-y-16">
+            <!-- Experience items will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">What People Say</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Feedback from colleagues and clients
+          </p>
+        </div>
+
+        <div
+          id="testimonials-grid"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Testimonials will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-32 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">Latest Thoughts</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Insights on AI-enhanced development and industry trends
+          </p>
+        </div>
+
+        <div id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Blog posts will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 relative z-10">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="section-title-glass">Let's Connect</h2>
+          <p class="text-lg text-warm-700 max-w-2xl mx-auto">
+            Ready to collaborate on your next AI-enhanced project?
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div class="space-y-8">
+            <div class="glass-card p-8 rounded-3xl">
+              <h3 class="text-2xl font-bold text-warm-900 mb-6 font-display">
+                Get in Touch
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <div class="glass-icon-small">
+                    <i class="fas fa-envelope text-warm-600"></i>
+                  </div>
+                  <div>
+                    <div class="font-medium text-warm-900">Email</div>
+                    <div class="text-warm-700" id="contact-email"></div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div class="glass-icon-small">
+                    <i class="fas fa-phone text-warm-600"></i>
+                  </div>
+                  <div>
+                    <div class="font-medium text-warm-900">Phone</div>
+                    <div class="text-warm-700" id="contact-phone"></div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div class="glass-icon-small">
+                    <i class="fas fa-map-marker-alt text-warm-600"></i>
+                  </div>
+                  <div>
+                    <div class="font-medium text-warm-900">Location</div>
+                    <div class="text-warm-700" id="contact-location"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="flex space-x-4 mt-8">
+                <a
+                  href="https://github.com/lisanhsn"
+                  class="social-glass-large"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/lisanhsn"
+                  class="social-glass-large"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://twitter.com/lisanhsn"
+                  class="social-glass-large"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card p-8 rounded-3xl">
+            <form id="contact-form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="form-group-glass">
+                  <label class="form-label-glass">Name</label>
+                  <input
+                    type="text"
+                    class="form-input-glass"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-group-glass">
+                  <label class="form-label-glass">Email</label>
+                  <input
+                    type="email"
+                    class="form-input-glass"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group-glass">
+                <label class="form-label-glass">Subject</label>
+                <input
+                  type="text"
+                  class="form-input-glass"
+                  placeholder="Project discussion"
+                  required
+                />
+              </div>
+              <div class="form-group-glass">
+                <label class="form-label-glass">Message</label>
+                <textarea
+                  class="form-textarea-glass"
+                  rows="6"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-glass-primary w-full">
+                Send Message
+                <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="glass-card p-8 rounded-3xl text-center">
+          <div class="text-2xl font-bold text-warm-900 mb-2 font-display">
+            Lisan Hsn
+          </div>
+          <div class="text-warm-700 mb-6">
+            AI-Leveraged Full Stack Developer
+          </div>
+          <div class="flex justify-center space-x-6 mb-6">
+            <a
+              href="https://github.com/lisanhsn"
+              class="social-glass"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/lisanhsn"
+              class="social-glass"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/lisanhsn"
+              class="social-glass"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="text-sm text-warm-600">
+            © 2025 Lisan Hsn. Built with AI assistance and modern web
+            technologies.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <style>
+      #minimax-floating-ball {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 12px;
+        background: #222222;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        color: #f8f8f8;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      #minimax-floating-ball:hover {
+        transform: translateY(-2px);
+        background: #383838;
+      }
+
+      .minimax-ball-content {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .minimax-logo-wave {
+        width: 26px;
+        height: 22px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .minimax-ball-text {
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .minimax-close-icon {
+        margin-left: 8px;
+        font-size: 16px;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.2s ease;
+      }
+
+      .minimax-close-icon:hover {
+        opacity: 1;
+      }
+    </style>
+    <div id="minimax-floating-ball">
+      <div class="minimax-ball-content">
+        <div class="minimax-logo-wave"></div>
+        <span class="minimax-ball-text">Created by MiniMax Agent</span>
+      </div>
+      <div class="minimax-close-icon">×</div>
+    </div>
+    <script>
+      // Initialize floating ball functionality
+      function initFloatingBall() {
+        const ball = document.getElementById("minimax-floating-ball");
+        if (!ball) return;
+
+        // Initial animation
+        ball.style.opacity = "0";
+        ball.style.transform = "translateY(20px)";
+
+        setTimeout(() => {
+          ball.style.opacity = "1";
+          ball.style.transform = "translateY(0)";
+        }, 500);
+
+        // Handle logo click
+        const ballContent = ball.querySelector(".minimax-ball-content");
+        ballContent.addEventListener("click", function (e) {
+          e.stopPropagation();
+          window.open("https://agent.minimax.io/agent", "_blank");
+          ball.style.transform = "scale(0.95)";
+          setTimeout(() => {
+            ball.style.transform = "scale(1)";
+          }, 100);
+        });
+
+        // Handle close button click
+        const closeIcon = ball.querySelector(".minimax-close-icon");
+        closeIcon.addEventListener("click", function (e) {
+          e.stopPropagation();
+          ball.style.opacity = "0";
+          ball.style.transform = "translateY(20px)";
+
+          setTimeout(() => {
+            ball.style.display = "none";
+          }, 300);
+        });
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener("DOMContentLoaded", initFloatingBall);
+    </script>
+  </body>
+</html>

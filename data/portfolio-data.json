@@ -1,0 +1,225 @@
+{
+  "personal": {
+    "name": "Lisan Hsn",
+    "title": "AI-Leveraged Full Stack Developer",
+    "tagline": "Crafting intelligent solutions through code and AI collaboration",
+    "email": "lisan.hsn@email.com",
+    "phone": "+61 (0) 400 123 456",
+    "location": "Sydney, Australia",
+    "website": "https://lisanhsn.dev",
+    "github": "https://github.com/lisanhsn",
+    "linkedin": "https://linkedin.com/in/lisanhsn",
+    "twitter": "https://twitter.com/lisanhsn"
+  },
+  "about": {
+    "intro": "Self-taught developer with 4+ years of experience building scalable web applications and intelligent systems. Based in Sydney, I believe in leveraging AI tools not as a replacement for skill, but as a force multiplier for creativity and efficiency.",
+    "story": "My journey began in 2021 when I decided to transition from marketing to tech. What started as curiosity about web development evolved into a passion for creating meaningful digital experiences. I've embraced AI tools early in my journey, recognizing their potential to accelerate learning and enhance code quality.",
+    "philosophy": "I approach development with a growth mindset, constantly learning and adapting to new technologies. My unique perspective combines human creativity with AI assistance, resulting in innovative solutions that are both technically sound and user-focused.",
+    "achievements": [
+      "Built and deployed 15+ production applications",
+      "Reduced development time by 40% through AI-assisted coding",
+      "Contributed to 3 open-source projects",
+      "Mentored 10+ aspiring developers"
+    ]
+  },
+  "skills": {
+    "frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vue.js",
+      "Svelte"
+    ],
+    "backend": [
+      "Node.js",
+      "Python",
+      "Django",
+      "FastAPI",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "aiTools": [
+      "GitHub Copilot",
+      "Claude",
+      "ChatGPT",
+      "Cursor",
+      "Tabnine",
+      "CodeWhisperer"
+    ],
+    "cloud": [
+      "AWS",
+      "Vercel",
+      "Netlify",
+      "Digital Ocean",
+      "Docker",
+      "Kubernetes"
+    ],
+    "tools": [
+      "Git",
+      "VS Code",
+      "Figma",
+      "Postman",
+      "Jest",
+      "Cypress"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Lisan Darth",
+      "description": "A TypeScript-based project showcasing modern web development practices and clean code architecture. Built with Sydney's tech standards in mind.",
+      "image": "images/project-dashboard.jpg",
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Modern Web APIs"
+      ],
+      "aiAssistance": "Developed with AI-assisted coding tools for enhanced productivity and code quality",
+      "features": [
+        "TypeScript implementation",
+        "Modern web development",
+        "Clean architecture",
+        "Sydney tech standards"
+      ],
+      "github": "https://github.com/lisanhsn/lisan-darth",
+      "demo": "https://github.com/lisanhsn/lisan-darth",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "title": "Spotify Music App",
+      "description": "A music application built with modern web technologies, providing an enhanced music listening experience with Spotify integration.",
+      "image": "images/chatbot-project.png",
+      "technologies": [
+        "JavaScript",
+        "Spotify API",
+        "Web Audio API",
+        "Modern UI/UX"
+      ],
+      "aiAssistance": "AI-enhanced user experience and music recommendation features",
+      "features": [
+        "Spotify integration",
+        "Music streaming",
+        "Playlist management",
+        "User-friendly interface"
+      ],
+      "github": "https://github.com/lisanhsn/m-s-j",
+      "demo": "https://github.com/lisanhsn/m-s-j",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "title": "My Projects Collection",
+      "description": "A comprehensive collection of C# projects demonstrating software development skills and object-oriented programming principles.",
+      "image": "images/analytics-project.jpg",
+      "technologies": [
+        "C#",
+        ".NET",
+        "Object-Oriented Programming",
+        "Software Development"
+      ],
+      "aiAssistance": "AI-assisted development practices for efficient coding and debugging",
+      "features": [
+        "C# applications",
+        "Software development",
+        "Code organization",
+        "Best practices"
+      ],
+      "github": "https://github.com/lisanhsn/My-Projects",
+      "demo": "https://github.com/lisanhsn/My-Projects",
+      "status": "Active"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Frontend Developer",
+      "company": "Sydney TechFlow Solutions",
+      "period": "2023 - Present",
+      "description": "Leading frontend development for enterprise SaaS applications in Sydney's tech hub, implementing AI-assisted development workflows.",
+      "achievements": [
+        "Reduced bug reports by 35% through AI-powered code review process",
+        "Mentored junior developers on AI tool integration",
+        "Led migration of legacy React app to Next.js 14"
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Sydney StartupXYZ",
+      "period": "2022 - 2023",
+      "description": "Built MVPs and production applications for multiple Sydney startup ventures using modern tech stack.",
+      "achievements": [
+        "Developed 5 MVPs that secured $2M+ in funding",
+        "Implemented CI/CD pipelines reducing deployment time by 60%",
+        "Integrated AI tools saving 40% development time"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Sydney WebCraft Agency",
+      "period": "2021 - 2022",
+      "description": "Created responsive websites and web applications for diverse Sydney client portfolio.",
+      "achievements": [
+        "Delivered 20+ client projects on time and budget",
+        "Achieved 95+ PageSpeed scores on all projects",
+        "Pioneered AI-assisted development practices in the team"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "title": "Product Manager at Sydney TechFlow",
+      "content": "Lisan's ability to combine technical expertise with AI tools is remarkable. He consistently delivers high-quality solutions faster than traditional development approaches.",
+      "rating": 5
+    },
+    {
+      "name": "Mike Rodriguez",
+      "title": "CTO at Sydney StartupXYZ",
+      "content": "Working with Lisan was a game-changer for our Sydney startup. His AI-leveraged development approach helped us launch our MVP 3 months ahead of schedule.",
+      "rating": 5
+    },
+    {
+      "name": "Emily Chen",
+      "title": "Designer at Sydney WebCraft",
+      "content": "Lisan bridged the gap between design and development seamlessly. His understanding of both AI capabilities and user experience is exceptional.",
+      "rating": 5
+    }
+  ],
+  "blog": [
+    {
+      "title": "The AI-Assisted Developer: My Journey in 2025",
+      "excerpt": "How I've learned to collaborate with AI tools to become a more efficient and creative developer.",
+      "date": "2025-01-15",
+      "readTime": "8 min read",
+      "tags": [
+        "AI",
+        "Development",
+        "Career"
+      ]
+    },
+    {
+      "title": "Building Faster with GitHub Copilot: Real-World Tips",
+      "excerpt": "Practical strategies for maximizing productivity with AI coding assistants while maintaining code quality.",
+      "date": "2025-01-08",
+      "readTime": "6 min read",
+      "tags": [
+        "GitHub Copilot",
+        "Productivity",
+        "Tips"
+      ]
+    },
+    {
+      "title": "Self-Taught Developer Success: Lessons from 4 Years",
+      "excerpt": "Key insights and strategies that helped me transition from marketing to becoming a senior developer.",
+      "date": "2025-01-01",
+      "readTime": "10 min read",
+      "tags": [
+        "Self-Taught",
+        "Career",
+        "Learning"
+      ]
+    }
+  ]
+}
